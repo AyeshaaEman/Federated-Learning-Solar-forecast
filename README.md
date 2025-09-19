@@ -1,12 +1,12 @@
-Federated Deep Learning Techniques for Solar Power Forecasting
+**Federated Deep Learning Techniques for Solar Power Forecasting**
 
 This repository contains an implementation of federated learning for solar power forecasting using time-series data. Three clients train local LSTM models, and the models are aggregated using Federated Averaging (FedAvg). RandomForest, SVM, and XGBoost are included as baseline models.
 
-Project Overview
+**Project Overview**
 
 This project implements federated deep learning for solar power forecasting with client-specific training and global model aggregation.
 
-Features
+**Features**
 
 Three client datasets with aligned timestamps.
 
@@ -20,7 +20,7 @@ RandomForest, SVM, and XGBoost as baselines.
 
 Evaluation with MAE, RMSE, MSE, and R².
 
-Workflow
+**Workflow**
 
 Load and align datasets
 
@@ -39,8 +39,7 @@ Evaluate models
 Aggregate with FedAvg
 
 Train and compare baseline ML models
-
-Repository Structure
+**Repository Structure**
 fed-solar-forecast/
 │── data/               # Datasets (not included)  
 │── notebooks/          # Jupyter notebooks  
@@ -49,17 +48,17 @@ fed-solar-forecast/
 │── requirements.txt    # Dependencies  
 │── README.md           # Documentation  
 
-Installation
+**Installation**
 git clone https://github.com/<your-username>/fed-solar-forecast.git
 cd fed-solar-forecast
 pip install -r requirements.txt
 
-Usage
+**Usage**
 python src/train_local.py       # Train local LSTM models
 python src/federated_avg.py     # Run FedAvg aggregation
 python src/evaluate.py          # Evaluate models
 
-Results
+**Results**
 
 Local LSTM models trained per client.
 
